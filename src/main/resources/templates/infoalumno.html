@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  >
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+<body>
+<form action="#" th:action="@{/crear}" th:object="${alu}" method="post">
+    <label for="nombre">nombre</label>
+    <input type="text" th:field="*{nombre}" id="nombre" placeholder="nombre">
+    <label for="apellido">Apellido</label>
+    <input type="text" th:field="*{apellido}" id="apellido" placeholder="apellido">
+    <label for="matricula">Matricula</label>
+    <input type="text" th:field="*{matricula}" id="matricula" placeholder="matricula">
+    <input type="submit" value="Agregar alumno">
+</form>
+</body>
+</html>

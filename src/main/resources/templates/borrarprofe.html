@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!DOCTYPE html> <html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/borrarprofe}" th:object="${profe}" method="get">
+    <label for="id_maestro">id_maestro</label>
+    <input type="text" th:field="*{id_maestro}" id="id_maestro" placeholder="id_maestro">
+    <input type="submit" value="Eliminar profesor">
+</form>
+</body>
+</html>

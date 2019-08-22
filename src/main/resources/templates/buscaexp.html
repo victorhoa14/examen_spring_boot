@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!DOCTYPE html> <html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/actualizar}" th:object="${exp}" method="get">
+    <label for="id_expediente">Id_expediente</label>
+    <input type="text" th:field="*{id_expediente}" id="id_expediente" placeholder="id_expediente">
+    <input type="submit" value="Buscar expediente">
+</form>
+</body>
+</html>

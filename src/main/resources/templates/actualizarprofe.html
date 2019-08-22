@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  >
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+<body>
+<form action="#" th:action="@{/crearprofe}" th:object="${profe}" method="post">
+    <label for="nombre">nombre</label>
+    <input type="text" th:field="*{nombre}" id="nombre" placeholder="nombre">
+    <input type="hidden" th:field="*{id_maestro}" id="id_maestro" placeholder="id_maestro">
+    <label for="apellido">Apellido</label>
+    <input type="text" th:field="*{apellido}" id="apellido" placeholder="apellido">
+    <label for="matricula">Matricula</label>
+    <input type="text" th:field="*{matricula}" id="matricula" placeholder="matricula">
+    <label for="telefono">Telefono</label>
+    <input type="text" th:field="*{telefono}" id="telefono" placeholder="telefono">
+    <input type="submit" value="Actulizar profesor">
+</form>
+</body>
+</html>

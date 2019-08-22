@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!DOCTYPE html> <html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/agregarc}" th:object="${calif}" method="get">
+    <input type="hidden" th:field="*{id_cursoalu}" id="id_cursoalu" placeholder="id_cursoalu">
+    <label for="calificacion">Calificacion</label>
+    <input type="text" th:field="*{calificacion}" id="calificacion" placeholder="calificacion">
+    <input type="submit" value="Aceptar">
+</form>
+</body>
+</html>

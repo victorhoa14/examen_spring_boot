@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!DOCTYPE html> <html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>buscar</title>
+</head>
+<body>
+
+<table >
+    <tr th:each="user: ${alu}">
+        <td th:text="${user.nombre}" />
+        <td th:text="${user.apellido}" />
+        <td th:text="${user.matricula}" />
+    </tr>
+</table>
+
+</body>
+</html>

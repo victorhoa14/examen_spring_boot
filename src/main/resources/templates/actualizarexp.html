@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  >
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+<body>
+<form action="#" th:action="@{/actualizare}" th:object="${exp}" method="post">
+    <label for="sexo">Sexo</label>
+    <input type="text" th:field="*{sexo}" id="sexo" placeholder="sexo">
+    <input type="hidden" th:field="*{id_expediente}" id="id_expediente" placeholder="id_expediente">
+    <label for="telefono">Telefono</label>
+    <input type="text" th:field="*{telefono}" id="telefono" placeholder="telefono">
+    <label for="direccion">Dirección</label>
+    <input type="text" th:field="*{direccion}" id="direccion" placeholder="direccion">
+    <input type="submit" value="Actualizar expediente">
+</form>
+</body>
+</html>

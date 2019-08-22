@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html> <html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<thead>
+<tr>
+    <th>Id_curso</th>
+    <th>Materia</th>
+
+</tr>
+</thead>
+<tbody>
+
+<tr th:each="producto: ${cursos}">
+    <td th:text="${producto.id_curso}"></td>
+    <td th:text="${producto.nombre}"></td>
+    <td><a th:href="@{agregarcali/} + ${producto.id_curso}" th:text="Calificar" ></a></td>
+</tr>
+
+<a href="/inicio"> <input class="button" type="button" value="INICIO"></a>
+</tbody>
+</table>
+
+</div>
+
+
+
+</body>
+</html>
